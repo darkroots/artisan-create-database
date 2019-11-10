@@ -1,0 +1,26 @@
+{
+    "name": "darkroots/artisan-create-database",
+    "description": "Create a fresh database from MySQL for your project.",
+    "require": {},
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DarkRoots",
+            "email": "bradyelliot@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Darkroots\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Darkroots\\Commands\\ArtisanCreateDatabaseServiceProvider"
+            ]
+        }
+    }
+}
